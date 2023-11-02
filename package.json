@@ -2,7 +2,7 @@
   "name": "porn-x",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "watch": "npx tsc --watch",
     "dev": "nodemon dist/index.js"
