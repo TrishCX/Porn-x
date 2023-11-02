@@ -1,5 +1,5 @@
 import { ExtendedClient } from "../extended";
 
-export class Client extends ExtendedClient {
+export class Initializer extends ExtendedClient {
   v?: "1.4";
 }
