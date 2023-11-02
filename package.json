@@ -1,15 +1,23 @@
 {
-  "name": "porn-x",
+  "name": "@imax.i7/porn-x",
   "version": "1.0.0",
-  "description": "",
+  "description": "A better version of the original module porn-x",
   "main": "dist/index.js",
   "scripts": {
     "watch": "npx tsc --watch",
     "dev": "nodemon dist/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "porn",
+    "nsfw",
+    "pornhub",
+    "hentai",
+    "github",
+    "npm",
+    "discord"
+  ],
+  "author": "Ritesh CX",
+  "license": "MIT",
   "devDependencies": {
     "nodemon": "^3.0.1",
     "tsx": "^3.14.0",
