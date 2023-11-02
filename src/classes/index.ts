@@ -1,1 +1,1 @@
-export { default as Initializer } from "./Client";
+export * from "./Client";
