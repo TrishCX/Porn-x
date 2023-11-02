@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A better version of the original module porn-x",
   "main": "dist/index.js",
+  "repository": {
+    "url": "https://github.com/TrishCX/Porn-x"
+  },
   "scripts": {
     "watch": "npx tsc --watch",
     "dev": "nodemon dist/index.js"
