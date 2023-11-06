@@ -24,7 +24,8 @@ export async function getInformation<T extends Options>(
   const $ = cheerio.load(body);
 
   const imagesArray: string[] = [];
-  const name = $(`h1:contains("${query}")`).text();
+  const name = $("h1#babename").text();
+
   const _hashPath = $("body")
     .find("#biography")
     .find("#profimg")
