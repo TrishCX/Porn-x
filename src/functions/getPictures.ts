@@ -1,4 +1,5 @@
 import * as cheerio from "cheerio";
+import { getPornPics } from "../helpers/index";
 
 export interface PicturesOptions {
   query: string;
@@ -15,6 +16,10 @@ export async function getPictures(options: PicturesOptions) {
   const body = await fetch(baseURL).then((res) => res.text());
   const $ = cheerio.load(body);
   const imagesArray: string[] = [];
+  const externalImages = await getPornPics({
+    ...options,
+  });
+  imagesArray.push(...externalImages);
   $("body")
     .find(".xrotator-thumbs")
     .find(".thumb")
@@ -28,5 +33,5 @@ export async function getPictures(options: PicturesOptions) {
       return imagesArray.push(image);
     });
   if (!imagesArray) throw Error("Ran in some problems, error fetching images.");
-  return imagesArray;
+  return imagesArray.sort(() => Math.random() - 0.5);
 }
